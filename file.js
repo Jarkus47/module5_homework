@@ -1,4 +1,4 @@
-let smartphone = new Map([
+let smartphone = new Map ([
   ["apple", "green"],
 
   ["samsung", "red"],
@@ -7,8 +7,9 @@ let smartphone = new Map([
 
   ["xiaomi", "white"]
 ]);
-for (let elem of smartphone) { 
 
-   console.log(elem); 
+for (let [key, value] of smartphone) {
+
+  console.log('Ключ - '+ key + ', значение - ' + value); // apple, strawberry, blueberry
 
 }
